@@ -1,0 +1,9 @@
+<h2>League Rosters</h2>
+
+<div id="teamContainer" *ngFor="let fantasyTeam of fantasyTeams">
+  <h4 style="padding-top: 5px;padding-left: 15px">{{ fantasyTeam.teamName }}</h4>
+  <app-fantasy-team-table [roster]="fantasyTeam.roster">
+	</app-fantasy-team-table>
+
+
+</div>
